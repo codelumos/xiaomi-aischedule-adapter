@@ -3,8 +3,8 @@
  * <p>Description: 可使用正则匹配；可使用解析dom匹配，工具内置了$，跟jquery使用方法一样，直接用就可以了，参考：https://juejin.im/post/5ea131f76fb9a03c8122d6b9</p>  
  *
  * @author  史浩楠
- * @date    2020-09-14
- * @version 1.1
+ * @date    2020-10-28
+ * @version 1.2
  */
 
 /** 
@@ -15,10 +15,18 @@
  */ 
 function parseWeeks(str) {
     let result = []
-    let begin = parseInt(str.split('-')[0])
-    let end = parseInt(str.split('-')[1])
-    for (let i = begin; i < end + 1; i++) {
-        result.push(i)
+    var arr = str.split(',') // 逗号分隔
+    for(j = 0; j < arr.length; j++) {
+        part = arr[j]
+        if (part.search("-") != -1 ) { // x-x周的形式
+            let begin = parseInt(part.split('-')[0])
+            let end = parseInt(part.split('-')[1])
+            for (let i = begin; i < end + 1; i++) {
+                result.push(i)
+            }
+        } else { // x周的形式
+            result.push(parseInt(part))
+        }
     }
     return result
 }
