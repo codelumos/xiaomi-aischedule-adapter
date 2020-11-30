@@ -4,7 +4,7 @@
  *
  * @author  史浩楠
  * @date    2020-11-30
- * @version 1.3.1
+ * @version 1.3.2
  */
 
 /**
@@ -16,13 +16,13 @@
 function parseWeeks(str) {
     let result = []
     let arr = str.split(',') // 逗号分隔周数片段
-    for (j = 0; j < arr.length; j++) {
-        part = arr[j]
+    for (let i = 0; i < arr.length; i++) {
+        let part = arr[i]
         if (part.search("-") !== -1) { // x-x周的形式
             let begin = parseInt(part.split('-')[0])
             let end = parseInt(part.split('-')[1])
-            for (let i = begin; i < end + 1; i++) {
-                result.push(i)
+            for (let j = begin; j < end + 1; j++) {
+                result.push(j)
             }
         } else { // x周的形式
             result.push(parseInt(part))
@@ -40,18 +40,18 @@ function parseWeeks(str) {
 function parseCourse(html) {
     const $ = cheerio.load(html, {decodeEntities: false}); // 避免中文乱码
     let course = []
-    // 遍历所有课程单元格div
+    // 遍历所有含有课程信息的单元格div标签
     $('#wdkbTable > tbody > tr > td > div').each(function () {
         // 获取课程信息
         let raw_weeks = $(this).find("div:nth-child(1)").text()
         let raw_name = $(this).find("div:nth-child(2)").text()
         let teacher = $(this).find("div:nth-child(3)").text()
         let position = $(this).find("div:nth-child(4)").text()
-        let day = String($(this).parent().attr("data-week"))
-        let sections = String($(this).parent().attr("data-begin-unit"))
+        let day = $(this).parent().attr("data-week")
+        let sections = $(this).parent().attr("data-begin-unit")
         // 转换课程信息格式
         let weeks = parseWeeks(raw_weeks)
-        let name = raw_name.replace(/\(.*?\)/g, '') // 移除字符串中的所有()括号（包括其内容）
+        let name = raw_name.replace(/\(.*?\)/g, '') // 移除字符串中的所有()括号及其中的内容
         let token = name + weeks + day // 用来唯一标识一门课程信息
         // 判断是否记录过该门课程
         let flag = -1
@@ -146,11 +146,8 @@ function courseFormat(list) {
  * @return JSON{}
  */
 function scheduleHtmlParser(html) {
-    let raw_course = []
-    let course = []
-    let section = []
-    raw_course = parseCourse(html)
-    course = courseFormat(raw_course)
-    section = parseSection(html)
+    let raw_course = parseCourse(html)
+    let course = courseFormat(raw_course)
+    let section = parseSection(html)
     return {courseInfos: course, sectionTimes: section}
 }
