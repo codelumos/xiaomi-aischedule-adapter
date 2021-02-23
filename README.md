@@ -17,14 +17,18 @@ AiSchedule_Adapter中包含小爱课程表适配各个选课系统的脚本。</
   <h4>南京大学-网上办事服务大厅-我的课表</h4>
   教务系统URL：https://ehallapp.nju.edu.cn/gsapp/sys/wdkbapp/*default/index.do
   </li>
+  <li>
+  <h4>北京中医药大学-教务管理系统（VPN）</h4>
+  教务系统URL：http://10.64.128.31/
+  </li>
 </ul>
-</br>
+<br />
 
 <h2>联系方式</h2>
 <ul>
   <li>E-Mail：haonshi@qq.com</li>
 </ul>
-</br>
+<br />
 
 <h2>支持打赏</h2>
 觉得好用就支持一下开发者吧！您的打赏是我维护更新的最大动力！
