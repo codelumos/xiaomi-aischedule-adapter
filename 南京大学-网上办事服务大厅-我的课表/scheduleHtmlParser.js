@@ -3,8 +3,8 @@
  * <p>Description: 可使用正则匹配；可使用解析dom匹配，工具内置了$，跟jquery使用方法一样，直接用就可以了，参考：https://juejin.im/post/5ea131f76fb9a03c8122d6b9</p>
  *
  * @author  史浩楠
- * @date    2020-11-30
- * @version 1.0.2
+ * @date    2021-3-1
+ * @version 1.1
  */
 
 /**
@@ -45,10 +45,10 @@ function parseCourse(html) {
         // 实际显示课程的单元格
         if ($(this).parent().css('display') !== 'none') {
             // 获取课程信息
-            let raw_weeks = $(this).find("div:nth-child(1)").text()
-            let raw_name = $(this).find("div:nth-child(2)").text()
-            let teacher = $(this).find("div:nth-child(3)").text()
-            let position = $(this).find("div:nth-child(4)").text()
+            let raw_weeks = $(this).find(":nth-child(1)").text()
+            let raw_name = $(this).find(":nth-child(2)").text()
+            let teacher = $(this).find(":nth-child(3)").text()
+            let position = $(this).find(":nth-child(4)").text()
             let day = $(this).parent().attr("xq")
             let sectionBegin = $(this).parent().attr("jcxq").split('-')[0]
             let sectionLength = $(this).parent().attr("rowspan")
