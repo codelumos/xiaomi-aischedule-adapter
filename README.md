@@ -8,20 +8,20 @@ xiaomi-aischedule-adapter中包含各学校选课系统适配小爱课程表的�
 
 ## 脚本列表
 
-- 南京大学-研究生选课
+- 南京大学-研究生选课（金智教育）
 
   教务系统URL：https://yjsxk.nju.edu.cn/
 
 
-- 南京大学-网上办事服务大厅-我的课表
+- 南京大学-网上办事服务大厅-我的课表（金智教育）
 
   教务系统URL：https://ehallapp.nju.edu.cn/gsapp/sys/wdkbapp/*default/index.do
 
 
-- 北京中医药大学-教务管理系统
+- 北京中医药大学-教务管理系统（强智科技）
 
   教务系统URL：https://10.64.128.31/
-  
+
   > 需使用VPN，建议在手机上自行安装EasyConnect
 
 ## 联系方式
