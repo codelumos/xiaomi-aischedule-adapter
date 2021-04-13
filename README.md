@@ -1,35 +1,32 @@
-<h1>AiSchedule_Adapter</h1>
+# xiaomi-aischedule-adapter
 
-<h2>仓库简介</h2>
+## 仓库简介
 
-<p>
-AiSchedule_Adapter中包含小爱课程表适配各个选课系统的脚本。<br />
-这些脚本都基于小爱课程表设计和实现，需要配合官方的开发者工具使用，详情可以申请加入小爱课程表校园开发者了解。<br />
-</p>
+xiaomi-aischedule-adapter中包含各学校选课系统适配小爱课程表的脚本。
 
-<h2>脚本列表</h2>
-<ul>
-  <li>
-  <h4>南京大学-研究生选课</h4>
-  教务系统URL：http://yjsxk.nju.edu.cn/
-  </li>
-  <li>
-  <h4>南京大学-网上办事服务大厅-我的课表</h4>
+这些脚本都基于小爱课程表设计和实现，需要配合官方的开发者工具使用，详情可以申请加入小爱课程表校园开发者了解。
+
+## 脚本列表
+
+- 南京大学-研究生选课
+
+  教务系统URL：https://yjsxk.nju.edu.cn/
+
+
+- 南京大学-网上办事服务大厅-我的课表
+
   教务系统URL：https://ehallapp.nju.edu.cn/gsapp/sys/wdkbapp/*default/index.do
-  </li>
-  <li>
-  <h4>北京中医药大学-教务管理系统（VPN）</h4>
-  教务系统URL：http://10.64.128.31/
-  </li>
-</ul>
-<br />
 
-<h2>联系方式</h2>
-<ul>
-  <li>E-Mail：haonshi@qq.com</li>
-</ul>
-<br />
 
-<h2>支持打赏</h2>
-觉得好用就支持一下开发者吧！您的打赏是我维护更新的最大动力！
-<img src="https://i.loli.net/2020/01/09/5aoFgD1qVWnrOHp.png" alt="二维码" width="600">
+- 北京中医药大学-教务管理系统
+
+  教务系统URL：https://10.64.128.31/
+  
+  > 需使用VPN，建议在手机上自行安装EasyConnect
+
+## 联系方式
+
+如果希望帮助适配自己学校教务系统，可以通过以下方式联系开发者：
+
+- E-Mail：haonshi@qq.com
+

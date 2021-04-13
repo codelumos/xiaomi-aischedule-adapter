@@ -2,7 +2,7 @@
  * <p>Title: 北京中医药大学-教务管理系统</p>
  * <p>Description: 输入课程页面的document对象，从页面中提取课程信息的HTML片段，输出HTML字符串</p>
  *
- * @author  史浩楠
+ * @author  HaoNShi
  * @date    2021-2-21
  * @version 1.0
  */

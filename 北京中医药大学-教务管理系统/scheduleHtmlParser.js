@@ -2,7 +2,7 @@
  * <p>Title: 北京中医药大学-教务管理系统</p>
  * <p>Description: 可使用正则匹配；可使用解析dom匹配，工具内置了$，跟jquery使用方法一样，直接用就可以了，参考：https://juejin.im/post/5ea131f76fb9a03c8122d6b9</p>
  *
- * @author  史浩楠
+ * @author  HaoNShi
  * @date    2021-2-21
  * @version 1.0
  */
