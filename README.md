@@ -20,9 +20,7 @@ xiaomi-aischedule-adapter中包含各学校选课系统适配小爱课程表的�
 
 - 北京中医药大学-教务管理系统（强智科技）
 
-  教务系统URL：https://10.64.128.31/
-
-  > 需使用VPN，建议在手机上自行安装EasyConnect
+  教务系统URL：http://jw.bucm.edu.cn/
 
 ## 联系方式
 
