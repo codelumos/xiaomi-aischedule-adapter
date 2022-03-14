@@ -2,7 +2,7 @@
  * <p>Title: 南京大学-研究生选课</p>
  * <p>Description: 可使用正则匹配；可使用解析dom匹配，工具内置了$，跟jquery使用方法一样，直接用就可以了，参考：https://juejin.im/post/5ea131f76fb9a03c8122d6b9</p>
  *
- * @author  HaoNShi
+ * @author  CodeLumos
  * @date    2020-11-30
  * @version 1.3.2
  */

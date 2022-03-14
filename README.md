@@ -20,11 +20,12 @@ xiaomi-aischedule-adapter中包含各学校选课系统适配小爱课程表的�
 
 - 北京中医药大学-教务管理系统（强智科技）
 
-  教务系统URL：http://jw.bucm.edu.cn/
+  教务系统URL：https://jw.bucm.edu.cn/
 
 ## 联系方式
 
 如果希望帮助适配自己学校教务系统，可以通过以下方式联系开发者：
 
-- E-Mail：haonshi@qq.com
+- 📧：codelumos@163.com
 
+PS：非小爱课程表官方开发人员，只是参与教务系统适配工作
